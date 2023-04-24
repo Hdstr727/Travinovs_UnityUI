@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Miniature Army 2D V.1/Scene/start.unity
+  isLoaded: 1
+  isActive: 1
