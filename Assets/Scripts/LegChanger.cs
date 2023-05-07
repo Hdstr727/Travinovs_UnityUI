@@ -43,5 +43,4 @@ public class LegChanger : MonoBehaviour {
 
         currentLegsText.text = currentLeftLegImage.name;
     }
-
 }
