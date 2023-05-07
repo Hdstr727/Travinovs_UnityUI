@@ -11,6 +11,7 @@ public class BodyAndArmChanger : MonoBehaviour {
     public Image[] LeftArmImages;
     public Image[] RightArmImages;
     public int currentIndex = 0;
+    public Text currentBodyText;
     public void SetPreviousBodyAndArms()
     {
         currentIndex--;
@@ -42,7 +43,7 @@ public class BodyAndArmChanger : MonoBehaviour {
         Image currentRightArmImage = RightArmImages[currentIndex];
         RightArmObject.GetComponent<Image>().sprite = currentRightArmImage.sprite;
 
-       
+        currentBodyText.text = currentBodyImage.name;
     }
 
 
