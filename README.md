@@ -1,4 +1,3 @@
-# Travinovs_UnityUI
 UI projekts
 
 ## Daramo darbu saraksts
