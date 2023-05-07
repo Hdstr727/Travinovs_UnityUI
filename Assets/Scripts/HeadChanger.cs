@@ -36,7 +36,7 @@ public class HeadChanger : MonoBehaviour {
 
         if (currentHeadImage.name == "ķivere")
         {
-            headObject.transform.localPosition = new Vector3(-4, 98, 0);
+            headObject.transform.localPosition = new Vector3(-8, 106, 0);
         }
         else
         {

@@ -11,13 +11,15 @@ public class SliderScript : MonoBehaviour {
 
     public void ChangeHeight()
     {
-        float CurrentHeight = HeightSlider.GetComponent<Slider>().value;
-        Character.transform.localScale = new Vector2(1, 1f * CurrentHeight);
+        float currentHeight = HeightSlider.GetComponent<Slider>().value;
+        float currentWidth = WidthSlider.GetComponent<Slider>().value;
+        Character.transform.localScale = new Vector2(1f * currentWidth, 1f * currentHeight);
     }
 
     public void ChangeWidth()
     {
-        float CurrentWidth = WidthSlider.GetComponent<Slider>().value;
-        Character.transform.localScale = new Vector2(1f * CurrentWidth, 1);
+        float currentWidth = WidthSlider.GetComponent<Slider>().value;
+        float currentHeight = HeightSlider.GetComponent<Slider>().value;
+        Character.transform.localScale = new Vector2(1f * currentWidth, 1f * currentHeight);
     }
 }
