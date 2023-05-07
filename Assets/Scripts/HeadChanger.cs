@@ -7,6 +7,7 @@ public class HeadChanger : MonoBehaviour {
     public GameObject headObject;
     public Image[] headImages;
     public int currentHeadIndex = 0;
+    public Text currentHeadText;
 
     public void SetPreviousHead()
     {
@@ -33,14 +34,16 @@ public class HeadChanger : MonoBehaviour {
         Image currentHeadImage = headImages[currentHeadIndex];
         headObject.GetComponent<Image>().sprite = currentHeadImage.sprite;
 
-        if (currentHeadImage.name == "helmet-black")
+        if (currentHeadImage.name == "ķivere")
         {
-            headObject.transform.localPosition = new Vector3(-8, 98, 0);
+            headObject.transform.localPosition = new Vector3(-4, 98, 0);
         }
         else
         {
             headObject.transform.localPosition = new Vector3(-14, 98, 0);
         }
+
+        currentHeadText.text = currentHeadImage.name;
     }
 }
 
